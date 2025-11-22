@@ -1,0 +1,519 @@
+/* Import de la police Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Police du site */
+body {
+    font-family: "Poppins", sans-serif;
+     
+     }
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transitions globales */
+a, 
+.btn {
+    transition: all 0.3s ease;
+}
+
+/* Barre de navigation */
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* Liens */
+a {
+    color: #000;
+    text-decoration: none;
+    text-decoration-color: #fff;
+}
+
+a:hover {
+    color: #808080;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+/* Logo */
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+/* ===========================
+      MENU HAMBURGER
+   =========================== */
+
+#hamburger-nav {
+    display: none; /* caché par défaut */
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Conteneur des liens */
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: fit-content;
+    max-height: 0;       /* caché */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+/* Quand le menu est ouvert */
+.menu-links.open {
+    max-height: 300px;
+}
+
+/* Animation hamburger → X */
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+/* Réinitialisation des barres */
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* ===========================
+      SECTIONS PRINCIPALES
+   =========================== */
+
+section {
+    section {
+    height: 96vh;
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-width: fit-content;
+    
+}
+
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+    
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.section-text-p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* Icônes sociales */
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+#socials-container img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Boutons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+/* Styles des boutons */
+.btn-color-1, 
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover, 
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, 
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: #fff;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn.container {
+    gap: 1rem;
+}
+
+
+
+#about {
+    position: relative;
+    }
+
+/* Conteneur des deux boîtes (Experience / Education) */
+.about-containers{
+    gap: 2rem;   
+    margin-bottom:2rem ;         /* espace entre les 2 boîtes */
+    margin-top: 2rem;
+}
+
+/* Conteneur global texte + boîtes */
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;  /* Ils s’empilent verticalement */
+}
+
+/* Les 2 conteneurs deviennent flex */
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+
+/* Photo */
+.about-pic{
+    border-radius: 2rem;
+  
+}
+
+/* Flèche */
+.arrow {
+    position: absolute;
+    right: -5rem;          /* position droite */
+    bottom: 2.5rem;          /* ❗ Correction : 2.rem → 2rem */
+}
+
+/* Boîte blanche Education / Experience */
+.details-container {
+    padding: 1.5rem;         /* ❗ Correction 1.rem → 1rem */
+    flex:1;
+    background: #fff;
+    border-radius: 2rem;
+    border: rgb(163,163,163) 0.1rem solid; 
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+/* conteneur global */
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+
+/* conteneur image */
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;          /* centre verticalement */
+}
+
+
+
+
+#experience {
+    position: relative;
+    
+}
+
+.experience-sub-title{
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+/* ✔️ Maintenant les deux blocs (Frontend + Backend) sont côte à côte */
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* ← Met enfin les blocs en COLONNES */
+    gap: 2rem;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.about-containers {
+    display: flex;
+    gap: 2rem;
+}
+
+.details-container {
+    flex: 1;
+}
+
+article .icon {
+    cursor: default;
+}
+
+
+
+#projects {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+/* Couleurs et style des boîtes projets */
+.color-container{
+    border-color: rgb(163,163,163);
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;               /* Pour que toutes les boîtes aient la même largeur */
+}
+
+/* Images des projets */
+.project-img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Titres des projets */
+.project-title{
+    margin: 1rem 0;
+    color: #000;
+}
+
+/* Boutons projets */
+.project-btn{
+    color: #000;
+    border: 1px solid rgb(53,53,53);
+    background: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    cursor: pointer;
+}
+
+.project-btn:hover{
+    background: rgb(53,53,53);
+    color: #fff;
+}
+
+/* Conteneur global des projets */
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;       /* Permet de passer en ligne suivante si l'espace manque */
+    gap: 2rem;             /* Espacement entre projets */
+}
+
+/* Conteneur interne pour les boîtes (si tu utilises about-containers à l'intérieur) */
+.about-containers{
+    display: flex;
+    flex-wrap: wrap;       /* Même effet de retour à la ligne */
+    gap: 2rem;
+}
+
+
+.contact-info-container                                              img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: rgb(250, 250 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+
+
+}
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem ;
+    margin: 1rem;
+
+
+}
+.contact-info-container{
+    font-size: larger;
+}
+.contact-icon{
+    cursor: default;
+}
+.email-icon{
+    height: 2.5rem;
+}
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+
+
+.section__pic-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    /* l'image remplit le cercle sans déformation */
+    display: block;
+}
+
