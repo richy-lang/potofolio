@@ -149,3 +149,101 @@
     <section id="projects">
         <p class="section__text__p1">Jetez un œil</p>
         <h2 class="title">Projets</h2>
+
+        <div class="experience-details-container">
+
+            <!-- Projet 1 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="img/portfolio1.jpg" alt="Projet 1 – Portfolio interactif Richy Anguilet" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Projet 1</h3>
+                <div class="btn-container">
+                    <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
+                    <button class="btn btn-color-2">Live Demo</button>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="img/portfolio2.jpg" alt="Projet 2 – Portfolio interactif Richy Anguilet" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Projet 2</h3>
+                <div class="btn-container">
+                    <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
+                    <button class="btn btn-color-2">Live Demo</button>
+                </div>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="img/portfolio3.jpg" alt="Projet 3 – Portfolio interactif Richy Anguilet" class="project-img">
+                </div>
+                <h3 class="experience-sub-title project-title">Projet 3</h3>
+                <div class="btn-container">
+                    <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
+                    <button class="btn btn-color-2">Live Demo</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+        <p class="section__text__p1">Entrer en contact</p>
+        <h2 class="title">Contactez-Moi</h2>
+
+        <!-- Infos contact -->
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="img/email.png" class="icon contact-icon" alt="Email Richy Anguilet">
+                <p><a href="mailto:richyanguilet05@gmail.com">richyanguilet05@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="img/Icon Facebook.jpeg" class="icon" alt="Facebook Richy Anguilet">
+                <p><a href="https://Facebook.com/">Facebook</a></p>
+            </div>
+        </div>
+
+        <!-- FORMULAIRE DE CONTACT -->
+        <div class="contact-form-container">
+            <form id="contact-form" class="contact-form">
+
+                <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                <input type="email" name="email" id="email" placeholder="Votre email" required>
+                <textarea name="message" id="message" rows="5" placeholder="Votre message..." required></textarea>
+
+                <button class="btn btn-color-1" type="submit">Envoyer</button>
+
+            </form>
+        </div>
+
+        <p id="status"></p>
+
+        <!-- FOOTER -->
+        <footer>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <p>Copyright &#169; 2025 Anguilet Richy. Tous droits réservés.</p>
+        </footer>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      emailjs.init("isqejuOkfswTejsE9"); // ton User ID EmailJS
+    </script>
+    <script src="index.js"></script> <!-- ton fichier JS -->
+
+</body>
+</html>
