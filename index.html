@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Google Verification -->
     <meta name="google-site-verification" content="mz8RoBUr93mgjydwxydaIoyoX9BuV2tUmbXD7h8kocw" />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Portfolio Richy – Développeur Web Frontend</title>
-
-
+    <meta name="description" content="Portfolio de Richy Anguilet, développeur web frontend. Découvrez mes projets interactifs en HTML, CSS, JavaScript et React.">
+    <meta name="keywords" content="Portfolio, Richy Anguilet, Développeur Web, Frontend, HTML, CSS, JavaScript, React, projets web">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediasquieris.css">
 </head>
@@ -17,9 +21,9 @@
     <nav id="desktop-nav">
         <div class="logo">Richy Anguilet</div>
         <ul class="nav-links">
-            <li><a href="#about">A Propos</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -27,7 +31,6 @@
     <!-- NAVIGATION MOBILE -->
     <nav id="hamburger-nav">
         <div class="logo">Richy Anguilet</div>
-
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -37,9 +40,9 @@
 
             <div class="menu-links">
                 <ul>
-                    <li><a href="#about" onclick="toggleMenu()">A Propos</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">À Propos</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </ul>
             </div>
@@ -49,7 +52,7 @@
     <!-- SECTION PROFILE -->
     <section id="profile">
         <div class="section__pic-container">
-            <img src="img/p8pic.jpg" alt="Photo de profil Richy Anguilet">
+            <img src="img/p8pic.jpg" alt="Photo de profil Richy Anguilet – développeur web frontend">
         </div>
 
         <div class="section__text">
@@ -58,13 +61,13 @@
             <p class="section__text__p2">Développeur débutant</p>
 
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="location.href='#about'">A Propos</button>
+                <button class="btn btn-color-2" onclick="location.href='#about'">À Propos</button>
                 <button class="btn btn-color-1" onclick="location.href='#contact'">Contactez-moi</button>
             </div>
 
             <div id="socials-container">
-                <img src="img/github.jpeg" alt="GitHub" class="icon" onclick="location.href='https://github.com/'">
-                <img src="img/LinkedIn.jpeg" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/'">
+                <img src="img/github.jpeg" alt="GitHub Richy Anguilet" class="icon" onclick="location.href='https://github.com/'">
+                <img src="img/LinkedIn.jpeg" alt="LinkedIn Richy Anguilet" class="icon" onclick="location.href='https://linkedin.com/'">
             </div>
         </div>
     </section>
@@ -72,74 +75,69 @@
     <!-- SECTION ABOUT -->
     <section id="about">
        <p class="section__text__p1">Apprenez à me connaître</p>
-       <h1 class="title">À propos</h1>
+       <h2 class="title">À propos</h2>
 
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="img/essai.jpeg" alt="Photo à propos" class="about-pic">
+                <img src="img/essai.jpeg" alt="Photo de la section À propos – Richy Anguilet" class="about-pic">
             </div>
 
-             <div class="about-details-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="img/quality.png" alt="Icône expérience" class="icon">
+                        <h3>Expérience</h3>
+                        <p>Débutant en programmation</p>
+                    </div>
 
-            <div class="about-containers">
-                <div class="details-container">
-                    <img src="img/quality.png" alt="Expérience icône" class="icon">
-                    <h3>Experience</h3>
-                    <p>Débutant en programmation</p>
+                    <div class="details-container">
+                        <img src="img/education.png" alt="Icône éducation" class="icon">
+                        <h3>Éducation</h3>
+                        <p>École d'Informatique depuis 2 ans</p>
+                    </div>
                 </div>
 
-                <div class="details-container">
-                    <img src="img/education.png" alt="Éducation icône" class="icon">
-                    <h3>Education</h3>
-                    <p>École d'Informatique depuis 2 ans</p>
+                <div class="text-container">
+                    <p>
+                        Au début, je pensais que je n’aimerais pas l’informatique car je n’avais jamais fait de code. 
+                        Mais maintenant, j’avance petit à petit et j’apprends à me sentir à l’aise dans le domaine tech. 
+                        Mon objectif est de continuer à progresser et de devenir compétent en développement et technologies.
+                    </p>
                 </div>
-            </div>
-
-            <div class="text-container">
-                <p>
-                    Au début, je pensais que je n’aimerais pas l’informatique car je n’avais jamais fait de code. 
-                    Mais maintenant, j’avance petit à petit et j’apprends à me sentir à l’aise dans le domaine tech. 
-                    Mon objectif est de continuer à progresser et de devenir compétent en développement et technologies.
-                </p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- SECTION EXPERIENCE -->
     <section id="experience">
         <p class="section__text__p1">Explore Mon</p>
-        <h1 class="title">Experience</h1>
+        <h2 class="title">Expérience</h2>
 
         <div class="experience-details-container">
             <div class="about-containers">
 
                 <!-- FRONTEND -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend DEV</h2>
+                    <h3 class="experience-sub-title">Frontend DEV</h3>
                     <div class="article-container">
-
-                        <article><img src="img/checked.png" class="icon"><div><h3>HTML</h3><p>Débutant</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>CSS</h3><p>Débutant</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>JavaScript</h3><p>Débutant</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>React</h3><p>A venir</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>Redux</h3><p>A venir</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>Tailwind</h3><p>A venir</p></div></article>
-
+                        <article><img src="img/checked.png" class="icon"><div><h4>HTML</h4><p>Débutant</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>CSS</h4><p>Débutant</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>JavaScript</h4><p>Débutant</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>React</h4><p>A venir</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>Redux</h4><p>A venir</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>Tailwind</h4><p>A venir</p></div></article>
                     </div>
                 </div>
 
                 <!-- BACKEND -->
                 <div class="details-container">
-                    <h2 class="experience-sub-title">Backend DEV</h2>
+                    <h3 class="experience-sub-title">Backend DEV</h3>
                     <div class="article-container">
-
-                        <article><img src="img/checked.png" class="icon"><div><h3>Node.js</h3><p>A venir</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>Express</h3><p>A venir</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>PHP</h3><p>Débutant</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>SQL</h3><p>Débutant</p></div></article>
-                        <article><img src="img/checked.png" class="icon"><div><h3>Python</h3><p>Débutant</p></div></article>
-
+                        <article><img src="img/checked.png" class="icon"><div><h4>Node.js</h4><p>A venir</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>Express</h4><p>A venir</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>PHP</h4><p>Débutant</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>SQL</h4><p>Débutant</p></div></article>
+                        <article><img src="img/checked.png" class="icon"><div><h4>Python</h4><p>Débutant</p></div></article>
                     </div>
                 </div>
 
@@ -148,127 +146,6 @@
     </section>
 
     <!-- SECTION PROJECTS -->
-<section id="projects">
-    <p class="section__text__p1">Jetez un oeil</p>
-    <h1 class="title">Projets</h1>
-
-    <div class="experience-details-container">
-
-        <!-- Projet 1 -->
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="img/portfolio1.jpg" alt="Projet One" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Projet 1</h2>
-            <div class="btn-container">
-                <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
-                <button class="btn btn-color-2">Live Demo</button>
-            </div>
-        </div>
-
-        <!-- Projet 2 -->
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="img/portfolio2.jpg" alt="Projet Two" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Projet 2</h2>
-            <div class="btn-container">
-                <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
-                <button class="btn btn-color-2">Live Demo</button>
-            </div>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="details-container color-container">
-            <div class="article-container">
-                <img src="img/portfolio3.jpg" alt="Projet Three" class="project-img">
-            </div>
-            <h2 class="experience-sub-title project-title">Projet 3</h2>
-            <div class="btn-container">
-                <a href="https://github.com/richy-lang/potofolio" target="_blank" class="btn btn-color-2">GitHub</a>
-                <button class="btn btn-color-2">Live Demo</button>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-    <!-- SECTION CONTACT -->
-<section id="contact">
-    <p class="section__text__p1">Entrer en contact</p>
-    <h1 class="title">Contactez-Moi</h1>
-
-    <!-- Infos contact -->
-    <div class="contact-info-upper-container">
-
-        <div class="contact-info-container">
-            <img src="img/email.png" class="icon contact-icon">
-            <p><a href="mailto:richyanguilet05@gmail.com">richyanguilet05@gmail.com</a></p>
-        </div>
-
-        <div class="contact-info-container">
-            <img src="img/Icon Facebook.jpeg" class="icon">
-            <p><a href="https://Facebook.com/">Facebook</a></p>
-        </div>
-
-    </div>
-
-    <!-- FORMULAIRE DE CONTACT -->
-    <div class="contact-form-container">
-        <form id="contact-form" class="contact-form">
-
-            <input 
-                type="text" 
-                name="name" 
-                id="name" 
-                placeholder="Votre nom" 
-                required>
-
-            <input 
-                type="email" 
-                name="email" 
-                id="email" 
-                placeholder="Votre email" 
-                required>
-
-            <textarea 
-                name="message" 
-                id="message" 
-                rows="5" 
-                placeholder="Votre message..." 
-                required></textarea>
-
-            <button class="btn btn-color-1" type="submit">Envoyer</button>
-
-        </form>
-    </div>
-
-    <p id="status"></p>
-
-    <!-- FOOTER -->
-    <footer>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">A Propos</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <p>Copyright &#169; 2025 Anguilet Richy. Tous droits réservés.</p>
-    </footer>
-</section>
-
-   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("isqejuOkfswTejsE9"); // ton User ID EmailJS
-</script>
-<script src="index.js"></script> <!-- ton fichier JS -->
-
-
-</body>
-</html>
-
-
+    <section id="projects">
+        <p class="section__text__p1">Jetez un œil</p>
+        <h2 class="title">Projets</h2>
